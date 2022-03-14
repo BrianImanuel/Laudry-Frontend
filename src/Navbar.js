@@ -9,10 +9,11 @@ function Logout() {
 export default function Navbar(props) {
   return (
     <div>
+      
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <a href="#" className="navbar-brand">
-            Toshi's Laundry
+          <a href="#" className="navbar-brand text-danger">
+            Toshi's
           </a>
 
           {/* button toogler */}
@@ -57,9 +58,10 @@ export default function Navbar(props) {
                   Transaksi baru
                 </Link>
               </li>
-                <button className="btn btn-outline-light btn-md">
-                  <Link to="/login" className="btn-link" onClick={() => Logout()}>Logout</Link>
-                </button> 
+                
+              <li className="nav-item">
+                <Link to="/login" className="nav-link text-info" onClick={() => Logout()}>Logout</Link>
+              </li>
             </ul>
           </div>
         </div>

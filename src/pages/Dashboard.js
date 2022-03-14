@@ -92,13 +92,15 @@ export default class Dashboard extends React.Component{
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6">
-                        <div className="card bg-success m-1">
+                    <div>
+                        <p></p>
+                    </div>
+                    <div className="col-lg-8">
+                        <div className="card text-center bg-success m-1">
                             <div className="card-body">
-                                <h4 className="card-title text-white">
-                                    Income
-                                </h4>
+                                <h4 className="card-title text-white">Income</h4>
                                 <h2 className="text-white">Rp {formatNumber(this.state.income)}</h2>
+                                <h6 className="text-success"> ⠀</h6>
                             </div>
                         </div>
                     </div>

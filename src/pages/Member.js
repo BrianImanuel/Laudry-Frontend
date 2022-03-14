@@ -1,7 +1,7 @@
 import React from "react";
 import { Modal } from "bootstrap";
 import axios from "axios";
-import {baseUrl , authorization} from "../config";
+import {  authorization} from "../config";
 
 class Member extends React.Component {
   constructor() {

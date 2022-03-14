@@ -146,22 +146,28 @@ export default class Transaksi extends React.Component{
         return(
             <div className="container">
                 <div className="card">
-                    <div className="card-header bg-primary">
+                    <div className="card-header text-center bg-primary">
                         <h4 className="text-white">List Transaksi</h4>
                     </div>
+                    <div>
+                                    <p></p>
+                                </div>
 
-                    <div className="card-body">
-
-                        <ReactToPdf targetRef={target} filename="Coba.pdf"
+                    <ReactToPdf targetRef={target} filename="Coba.pdf"
                         scale={0.8}>
                             { ({toPdf}) => (
                                 <button className="btn btn-danger" 
                                 onClick={toPdf}>
                                     Generate PDF
                                 </button>
+                                
                             )}
                         </ReactToPdf>
-                        
+                    <div className="card-body">
+
+                       
+
+                               
                         <ul ref={target} className="list-group">
                             {this.state.transaksi.map(trans => (
                                 <li className="list-group-item">
@@ -199,7 +205,7 @@ export default class Transaksi extends React.Component{
                                         </div>
 
                                         {/* this is status area */}
-                                        <div className="col-lg-2">
+                                        <div className="col-lg-3">
                                             <small className="text-info">
                                                 Status
                                             </small><br/>
@@ -207,7 +213,7 @@ export default class Transaksi extends React.Component{
                                         </div>
 
                                         {/* this is status bayar area */}
-                                        <div className="col-lg-2">
+                                        <div className="col-lg-3">
                                             <small className="text-info">
                                                 Status Bayar
                                             </small><br/>

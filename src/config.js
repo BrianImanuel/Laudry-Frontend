@@ -6,7 +6,7 @@ const formatNumber = (num) => {
 // untuk menambahkan header authorization berupa bearer token
 const authorization = {
      headers: {
-         Authorized: `Bearer ${localStorage.getItem("token")}`
+         Authorization: `Bearer ${localStorage.getItem("token")}`
      }
  }
 
